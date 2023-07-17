@@ -57,7 +57,7 @@ defmodule Flop.MixProject do
     [
       {:credo, "~> 1.7.0", only: [:dev, :test], runtime: false},
       {:dialyxir, "~> 1.4.0", only: [:dev, :test], runtime: false},
-      {:ecto, "~> 3.10.3"},
+      {:ecto, github: "elixir-ecto/ecto", override: true},
       {:ecto_sql, "~> 3.9", only: :test},
       {:ex_doc, "~> 0.21", only: :dev, runtime: false},
       {:ex_machina, "~> 2.4", only: :test},
